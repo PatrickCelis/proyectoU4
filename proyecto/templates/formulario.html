@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Crear{% endblock%}
+
+{% block content %}
+<h2>Crea tu Proyecto</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creación del proyecto</title>
+</head>
+<body>
+  <form action="/creacion/" method="GET">
+        <input type="text" name="título">
+        <input type="button" value="CREAR">
+
+</body>
+</html>
+{% endblock %}
