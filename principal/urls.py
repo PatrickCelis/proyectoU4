@@ -21,11 +21,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', views.signin, name='signin'),
     path('signup/', views.signup, name='signup'),
     path('proyecto/', views.index, name='proyecto'),
     path('signout/', views.signout, name='signout'),
-    path('signin/',views.signin, name='signin'),
+#path('signin/',views.signin, name='signin'),
     path('insertarproyecto/', views.Insertarproyecto, name='insertar')
 ]
 

@@ -3,19 +3,50 @@
 {% block title %}U4{% endblock %}
 
 {% block content %}
-    <h2>Bienvenido</h2>
-    {% if user.is_authenticated %}
-        Hola, bienvenido {{ user.username }}!
-        <br><br>
 
-        <a class="btn btn-primary" href="insertarproyecto/">Crear proyecto</a>
+{% load static %}
+<style>
+body {
+background: url("{% static 'assets/img/crear.jpg' %}") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-        <a href="proyecto/" class="btn btn-success">Ver proyecto</a>
+            <div class="mb-md-5 mt-md-4 pb-5">
+              {% if user.is_authenticated %}
+              <h2 class="fw-bold mb-2 text-uppercase">Hola, bienvenido {{ user.username }}!</h2>
+                <br><br>
 
-        <a href="/signout" class="btn btn-danger">Cerrar Sesión</a>
-    {% else %}
-        <a href="/signin" class="btn btn-primary"><span class ="glyphicon glyphicon-log-in"></span>Login </a>
-        <a href="/signup" class="btn btn-success">Signup</a>
-    {% endif %}
+                <a class="btn btn-primary" href="insertarproyecto/">Crear proyecto</a>
+
+                <a href="proyecto/" class="btn btn-success">Ver proyecto</a>
+
+                <a href="/signout" class="btn btn-danger">Cerrar Sesión</a>
+
+                {% else %}
+                    <a href="/signin" class="btn btn-primary"><span class ="glyphicon glyphicon-log-in"></span>Login </a>
+                    <a href="/signup" class="btn btn-success">Signup</a>
+                {% endif %}
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 {% endblock %}
