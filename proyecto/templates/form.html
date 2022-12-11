@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Crea tu Proyecto</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+        <label for="foto">Elige una foto:</label>
+        {{ forms.foto }}
+      <br><br>
+  <label for="titulo">Título del proyecto:</label>
+        {{ forms.title }}
+    <br><br>
+    <p><label for="descripcion">Descripción de tu proyecto:</label></p>
+    {{ forms.descripcion }}
+  <br><br>
+
+
+
+  <label for="Tags">Tags:</label>
+ {{ forms.tags }}
+  <br><br>
+
+    <label for="url">Url de GitHub:</label>
+    {{ forms.github }}
+  <br><br>
+     <input type="submit" value="Submit">
+    {% if forms.errors %}
+                  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Por favor corrige los siguientes errores</h4>
+                    <hr>
+                    <ul>
+                      {% for field in forms %}
+                        {% if field.errors %}
+                            {% for error in field.errors %}
+                                <p> <i class="bi bi-x-circle-fill"></i> {{ field.label }}: <a href="#id_{{ field.name }}" class="text-danger">{{ error|escape }}</a> </p>
+
+                            {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                    {% if forms.non_field_errors %}
+                    <ul>
+                      {% for error in forms.non_field_errors %}
+                      <p> <i class="bi bi-x-circle-fill"></i> {{ error }} </p>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                  </div>
+                  {% endif %}
+
+
+
+
+</form>
+
+{% endblock %}

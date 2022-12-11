@@ -8,13 +8,13 @@
 <body>
 
     {% for project in projects %}
-        <img src="{{project.image.url}}" alt="{{project.title}}">
-        <li>{{ project.title }}</li>
+        <img src="{{project.foto.url}}" alt="{{project.title}}">
+        <h2>{{ project.title }}</h2>
         <h2>{{ project.descripcion }}</h2>
         <h3>{{ project.tags }}</h3>
         <h4>{{ project.github }}</h4>
-
-
+        {% empty %}
+            <h2>No hay proyectos registrados.</h2>
     {% endfor %}
 
 </body>

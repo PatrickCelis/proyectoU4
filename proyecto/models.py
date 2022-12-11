@@ -9,4 +9,6 @@ class Project(models.Model):
     descripcion = CharField(max_length=500)
     tags = CharField(max_length=20)
     github = URLField(blank=True)
+    class Meta:
+        db_table: "proyecto_project"
 

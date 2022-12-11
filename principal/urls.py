@@ -26,7 +26,7 @@ urlpatterns = [
     path('proyecto/', views.index, name='proyecto'),
     path('signout/', views.signout, name='signout'),
     path('signin/',views.signin, name='signin'),
-    path('crear/', views.crear, name='crear proyecto'),
+    path('insertarproyecto/', views.Insertarproyecto, name='insertar')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

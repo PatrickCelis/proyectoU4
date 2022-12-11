@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Crear{% endblock%}
+{% block title %}Crear{% endblock %}
 
 {% block content %}
 <h2>Crea tu Proyecto</h2>
@@ -10,9 +10,49 @@
     <title>Creación del proyecto</title>
 </head>
 <body>
-  <form action="/creacion/" method="GET">
-        <input type="text" name="título">
-        <input type="button" value="CREAR">
+<!--<form action="/creacion/" method="post">-->
+<form method="POST" >
+      {% csrf_token %}
+    <label for="foto">Elige una foto:</label>
+    <input
+      type="file"
+      id="foto"
+      name="foto"
+      accept=".jpg, .jpeg, .png" required/>
+      <br><br>
+  <label for="titulo">Título del proyecto:</label>
+  <input type="text" id="titulo" name="title" required><br><br>
+    <p><label for="descripcion">Descripción de tu proyecto:</label></p>
+  <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+  <br><br>
+
+
+
+  <label for="Tags">Tags:</label>
+  <select name="tags" id="Tags" required>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="python">Python</option>
+    <option value="otros">Otros</option>
+  </select>
+  <br><br>
+
+    <label for="url">Url de GitHub:</label>
+    <input
+  id="url"
+  name="github"
+  type="url"
+  placeholder="https://github.com/user/repository" required/>
+  <br><br>
+  <input type="submit" value="Submit">
+  {% if messages %}
+  {% for message in messages %}
+    <h2 style= "color:green;">{{message}}</h2>
+    <a class="btn btn-primary" href="/signup">Volver al inicio</a>
+  {% endfor %}
+  {% endif %}
+</form>
+  <img src="{{project.foto.url}}" alt="{{project.title}}">
 
 </body>
 </html>
