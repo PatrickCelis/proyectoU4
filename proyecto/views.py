@@ -7,6 +7,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout
 from proyecto.models import Project
 from django.contrib import messages
+from django.http import HttpResponse
 
 
 

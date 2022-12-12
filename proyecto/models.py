@@ -12,3 +12,9 @@ class Project(models.Model):
     class Meta:
         db_table: "proyecto_project"
 
+
+class IpUsuario(models.Model):
+    ip = models.GenericIPAddressField()
+
+    class Meta:
+        db_table: "proyecto_ip"
