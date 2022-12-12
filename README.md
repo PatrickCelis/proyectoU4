@@ -13,14 +13,14 @@ Creación de portafolio (Django)
 ## Funcionalidades a desarrollar:
 Formulario con los siguientes campos:
 
-* Foto (que puede ser una URL)
-* Título del proyecto
-* Descripción del proyecto
-* Tags: HTML, CSS, PYTHON, etc
-* URL de github
-* Formulario con validación
+* Foto (que puede ser una URL).
+* Título del proyecto.
+* Descripción del proyecto.
+* Tags: HTML, CSS, PYTHON, etc.
+* URL de github.
+* Formulario con validación.
 * Para poder crear un ítem (proyecto) el usuario debe estar logueado.
-* Guardar la IP de las personas que visitan el sitio. En caso no haya hecho despliegue con railway (que es opcional) puede usar ngrok o Cloudflare Tunnel para guardar las IPs de las visitas.
+* Guardar la IP de las personas que visitan el sitio.
 * La parte visual utiliza un template elavorado por mi.
 
 ## Proyecto otorgado por:
