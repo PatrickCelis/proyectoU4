@@ -3,9 +3,11 @@ Creación de portafolio
 
  <div align="center">
  
-![Libreria](https://www.telesurtv.net/__export/1510353963341/sites/telesur/img/multimedia/2017/11/10/librerxa11.jpg)
+![Portafolio](https://s3.amazonaws.com/www-inside-design/uploads/2019/05/portfoliofeature.png)
 
 </div>
+## Participante:
+* Jean Patrick Pisconte Celis.
 
 ## Proyecto otorgado por:
 <hr />
@@ -17,9 +19,6 @@ Creación de portafolio
 <sup>"En Silabuz entrenamos a tu equipo en las habilidades más demandadas de la industria para hacer crecer tu negocio acompañado de expertos con experiencia global."</sup>
  </div>
 <hr />
-
-## Participante:
-* Jean Patrick Pisconte Celis.
 
 # Licencia
 MIT
