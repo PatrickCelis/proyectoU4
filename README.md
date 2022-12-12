@@ -6,6 +6,7 @@ Creación de portafolio
 ![Portafolio](https://s3.amazonaws.com/www-inside-design/uploads/2019/05/portfoliofeature.png)
 
 </div>
+
 ## Participante:
 * Jean Patrick Pisconte Celis.
 
