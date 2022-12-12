@@ -18,21 +18,6 @@ Creación de portafolio
  </div>
 <hr />
 
-
-<details>
-<summary>Libros:</summary>
-
-- Como hacer que te pasen cosas buenas.
-  
-- El caballero Carmelo.
-  
-- El principito.
-
-- El universo: Guía de viaje.
-  
-</details>
-
-
 ## Participante:
 * Jean Patrick Pisconte Celis.
 
