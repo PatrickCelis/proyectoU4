@@ -32,19 +32,9 @@ Creación de portafolio
   
 </details>
 
-# Parte 2 del proyecto
-[Poke Api v2]( https://pokeapi.co/docs/v2)
 
-<div align="center">
-
-![Pokemon](https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/6420b-pikachu-sentado-png.png)
-
-</div>
-
-## Participantes:
-* Carlos Vega.
-* Luis Leon.
-* Patrick Celis.
+## Participante:
+* Jean Patrick Pisconte Celis.
 
 # Licencia
 MIT
